@@ -19,34 +19,36 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="container main-nav">
-        <nav class="main-nav">
+    <header class="header">
+      <div class="header__container container">
+        <nav class="site-nav">
           <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-          <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Studio</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Portfolio</a>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Studio</a>
             </li>
-            <li class="item"><a href="#" class="link">Contacts</a></li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Portfolio</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Contacts</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contacts list">
-          <li class="item">
-            <a href="mailto:info@example.com" class="email link">
-              <svg class="contacts-icon">
+        <ul class="contact list">
+          <li class="contact__item">
+            <a href="mailto:info@example.com" class="contact__link link" aria-label="email">
+              <svg class="contact__icon">
                 <use href="./images/svg/icons.svg#icon-envelope"></use>
               </svg>
-              info@example.com</a
-            >
+              info@example.com</a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="phone link">
-              <svg class="contacts-icon">
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link link" aria-label="phone">
+              <svg class="contact__icon">
                 <use href="./images/svg/icons.svg#icon-phone"></use>
               </svg>
-              +38 096 111 11 11</a
-            >
+              +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -249,82 +251,74 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="address-container">
-          <a  href="./index.html" class="logo-footer"><span>Web</span>Studio</a>
+      <div class="footer__container container">
+        <div class="address__container">
+          <a href="./index.html" class="footer__logo"><span>Web</span>Studio</a>
           <address class="address">
-            <ul class="footer-contacts list">
-              <li class="item">
-                <a
-                  class="link address-link"
-                  href="https://goo.gl/maps/gs37guJ5S6naws7R7"
-                  >695 Park Ave, New York, NY 10065, United States</a
-                >
+            <ul class="address__contact list">
+              <li class="address__item">
+                <a class="address__link link" href="https://goo.gl/maps/gs37guJ5S6naws7R7">695 Park Ave, New York, NY 10065,
+                  United States</a>
               </li>
-              <li class="item">
-                <a class="link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="address__item">
+                <a class="address__link link" href="mailto:info@example.com">info@example.com</a>
               </li>
-              <li class="item">
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="join">
-          <h2 class="join-title">Join us on</h2>
-          <ul class="social-net list">
-            <li class="social-item">
-              <a
-                class="social-link link"
-                target="_blank"
-                href="https://www.instagram.com/"
-                aria-label="instagram"
-              >
-                <svg class="social-icon">
+        <div class="join-us">
+          <h2 class="join-us__title">Join us on</h2>
+          <ul class="social-net__list list">
+            <li class="social-net__item">
+              <a class="social-net__link link" target="_blank" href="https://www.instagram.com/" aria-label="instagram">
+                <svg class="social-net__icon">
                   <use href="./images/svg/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a
-                class="social-link link"
-                target="_blank"
-                aria-label="twitter"
-                href=""
-              >
-                <svg class="social-icon">
+            <li class="social-net__item">
+              <a class="social-net__link link" target="_blank" aria-label="twitter" href="">
+                <svg class="social-net__icon">
                   <use href="./images/svg/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a
-                class="social-link link"
-                target="_balnk"
-                aria-label="facebook"
-                href=""
-              >
-                <svg class="social-icon">
+            <li class="social-net__item">
+              <a class="social-net__link link" target="_balnk" aria-label="facebook" href="">
+                <svg class="social-net__icon">
                   <use href="./images/svg/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a
-                class="social-link link"
-                target="_blank"
-                aria-label="linkedin"
-                href=""
-              >
-                <svg class="social-icon">
+            <li class="social-net__item">
+              <a class="social-net__link link" target="_blank" aria-label="linkedin" href="">
+                <svg class="social-net__icon">
                   <use href="./images/svg/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+    
+        <form class="form-subscribe" action="">
+          <label for="email">
+            <div class="subscribe">
+              <p class="subscribe-title">Subscribe to the newsletter</p>
+              <div class="input-container">
+                <input class="subscribe-input" type="email" placeholder="E-mail" required />
+                <button class="btn primary subscribe-btn">
+                  Subscribe
+                  <svg class="subscribe-icon">
+                    <use href="./images/svg/icons.svg#send"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </label>
+        </form>
       </div>
     </footer>
     <script>
